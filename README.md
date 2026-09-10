@@ -17,16 +17,16 @@ In the accompanying study, `target = 1` denotes AML and `target = 0` denotes non
 | --- | --- |
 | `code/data_simulated_rep_9groups.py` | Trains a CTGAN model and generates Monte Carlo datasets with controlled sample sizes and positive-class proportions. |
 | `code/GMM_Clustering.m` | Fits GMMs on the training data, selects the number of components using BIC, and assigns training and test observations to latent clusters. |
-| `code/jiaoben8_1_7_simu0708_beta9_geometric_visualization_mode.m` | Main G2DA simulation script, including model selection, evaluation, result aggregation, and visualization-only mode. |
-| `code/jiaoben8_1_7_simu0629.m` | Earlier main G2DA simulation implementation retained for reference. |
+| `code/jiaoben8_1_7_simu_beta9.m` | Main G2DA simulation script, including model selection, evaluation, result aggregation, and visualization-only mode. |
+| `code/jiaoben8_1_7_simu.m` | Earlier main G2DA simulation implementation retained for reference. |
 | `code/model8_1_7.m` | Stage-I DEA-DA optimization model. |
 | `code/model8_1_8.m` | Stage-II local feature-weight update for observations in the uncertainty region. |
-| `code/lr_baseline_CTGAN_0713.m` | Logistic-regression benchmark. |
-| `code/svm_baseline_CTGAN_0629.m` | Support-vector-machine benchmark. |
-| `code/knn_baseline_CTGAN_0629_v2.m` | k-nearest-neighbors benchmark. |
-| `code/rf_baseline_CTGAN_0629.m` | Random-forest benchmark using MATLAB `TreeBagger`. |
-| `code/xgb_baseline_CTGAN_0629.m` | XGBoost benchmark through MATLAB's Python interface. |
-| `code/lgbm_baseline_CTGAN_0629.m` | LightGBM benchmark through MATLAB's Python interface. |
+| `code/lr_baseline_CTGAN.m` | Logistic-regression benchmark. |
+| `code/svm_baseline_CTGAN.m` | Support-vector-machine benchmark. |
+| `code/knn_baseline_CTGAN.m` | k-nearest-neighbors benchmark. |
+| `code/rf_baseline_CTGAN.m` | Random-forest benchmark using MATLAB `TreeBagger`. |
+| `code/xgb_baseline_CTGAN.m` | XGBoost benchmark through MATLAB's Python interface. |
+| `code/lgbm_baseline_CTGAN.m` | LightGBM benchmark through MATLAB's Python interface. |
 
 ## Simulation design
 
@@ -136,7 +136,7 @@ The source cohort is used only to fit CTGAN and evaluate synthetic-data quality.
 
 ### 3. Run G2DA
 
-Open `code/jiaoben8_1_7_simu0708_beta9_geometric_visualization_mode.m` and update:
+Open `code/jiaoben8_1_7_simu_beta9.m` and update:
 
 ```matlab
 dataFolder = 'PATH_TO_ONE_SIMULATION_SETTING';
